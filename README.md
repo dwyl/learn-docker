@@ -34,3 +34,6 @@ Boot to Docker: https://github.com/boot2docker/boot2docker
 https://www.youtube.com/watch?v=Q5POuMHxW-0 47mins - 2mins of *content*!
 - Be a happier developer with Docker:
 https://www.youtube.com/watch?v=XCVOxht34Hs 25mins - relevant to developers
+
+
+>> https://medium.com/@dscape/getting-started-with-docker-for-the-node-js-couchdb-programmer-35c45ce2a814
