@@ -1,5 +1,7 @@
-learn-docker
+Learn Docker
 ============
+
+![Docker Logo](http://i.imgur.com/KgdWLdh.png)
 
 Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
@@ -19,6 +21,8 @@ your apps on any infrastructure.
 
 - https://docs.docker.com/installation/
 
+If your laptop/pc is not running Linux you will need:
+Boot to Docker: https://github.com/boot2docker/boot2docker
 
 ## Useful Links
 
@@ -30,7 +34,3 @@ your apps on any infrastructure.
 https://www.youtube.com/watch?v=Q5POuMHxW-0 47mins - 2mins of *content*!
 - Be a happier developer with Docker:
 https://www.youtube.com/watch?v=XCVOxht34Hs 25mins - relevant to developers
-
-If you laptop/pc is not running Linux you will need:
-
-- Boot to Docker: https://github.com/boot2docker/boot2docker
