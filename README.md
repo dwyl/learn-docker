@@ -1,7 +1,9 @@
-Learn Docker
+Docker: Believe the Hype!
 ============
 
 ![Docker Logo](http://i.imgur.com/KgdWLdh.png)
+
+
 
 Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
@@ -24,8 +26,33 @@ your apps on any infrastructure.
 If your laptop/pc is not running Linux you will need:
 Boot to Docker: https://github.com/boot2docker/boot2docker
 
+Download the Boot2Docker**.pkg** (Mac)
+or docker-install.**exe** (Windows)
+and install it on your Mac/PC.
+
+## Run Boot2Docker
+
+```
+docker build -t learn-docker .
+```
+
+When you run:
+```
+$ docker images
+```
+You should see:
+```
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+learn-docker        latest              f8b203357215        3 minutes ago       215.3 MB
+ubuntu              14.04               c3d5614fecc4        38 hours ago        194.9 MB
+```
+
+
 ## Useful Links
 
+### Cheat Sheet
+
+- Command Line Reference: http://docs.docker.com/reference/commandline/cli
 
 ### Videos
 
