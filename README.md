@@ -11,8 +11,9 @@ your apps on any infrastructure.
 
 ## What? (*Quick* Introduction)
 
-> https://www.docker.com/whatisdocker +
-> https://www.youtube.com/watch?v=ZzQfxoMFH0U
+- Read the *official* "What is Docker?"
+post: https://www.docker.com/whatisdocker
+- Watch the intro vide: https://www.youtube.com/watch?v=ZzQfxoMFH0U
 
 
 ## Try
@@ -53,6 +54,7 @@ ubuntu              14.04               c3d5614fecc4        38 hours ago        
 ### Cheat Sheet
 
 - Command Line Reference: http://docs.docker.com/reference/commandline/cli
+- Cheat Sheet: https://github.com/wsargent/docker-cheat-sheet
 
 ### Videos
 
@@ -62,5 +64,7 @@ https://www.youtube.com/watch?v=Q5POuMHxW-0 47mins - 2mins of *content*!
 - Be a happier developer with Docker:
 https://www.youtube.com/watch?v=XCVOxht34Hs 25mins - relevant to developers
 
+### Tutorials
 
->> https://medium.com/@dscape/getting-started-with-docker-for-the-node-js-couchdb-programmer-35c45ce2a814
+- http://blog.xebia.com/2014/06/18/deploying-a-node-js-app-to-docker-on-coreos-using-deis/
+- https://medium.com/@dscape/getting-started-with-docker-for-the-node-js-couchdb-programmer-35c45ce2a814
