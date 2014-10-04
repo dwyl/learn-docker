@@ -18,7 +18,7 @@ post: https://www.docker.com/whatisdocker
 
 ## Try
 
-> https://www.docker.com/tryit/
+- Try the online demo: https://www.docker.com/tryit/
 
 ## Installation
 
