@@ -125,9 +125,19 @@ Labels:
 
 ### Run the `Dockerfile` in this repo
 
+First build the image:
+
 ```sh
 docker build -t learn-docker .
 ```
+Then run the image as a container:
+```sh
+docker run -it learn-docker bash
+```
+> https://docs.docker.com/reference/run/
+
+
+### List (*Locally Available*) Images
 
 View the current (*locally*) available docker images:
 ```sh
@@ -152,18 +162,33 @@ To list all the running docker containers, use:
 docker ps -a
 ```
 
-
-
 > https://docs.docker.com/reference/commandline/ps/
 
 ### More info on a specific container
 
 To get more detail on a container type: `docker inspect {imageid}`
 
-e.g:
+e.g: in our case the container we are interested in has the id: **a205fc3a096f** so we run:
 ```sh
-docker inspect {imageid}
+docker inspect a205fc3a096f
 ```
+The complete output of this command is in:
+[/**sample-docker-inspect.txt**](https://github.com/dwyl/learn-docker/blob/e8769347940dc13d8197742b9e232e3efd85ca8d/sample-docker-inspect.txt)
+
+#### Just the IP address
+
+If all we want is the container's IP address we run:  
+` docker inspect --format '{{ .NetworkSettings.IPAddress }}' a205fc3a096f`  
+where the last argument is the container (image) id.  
+<small>Courtesy of: http://stackoverflow.com/a/20686101/1148249</small>
+
+### Kill a Container by ID
+
+```sh
+docker stop a205fc3a096f
+```
+
+> https://docs.docker.com/reference/commandline/stop/
 
 
 ## Useful Links
