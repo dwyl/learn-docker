@@ -43,18 +43,35 @@ and get on with it! (*click install*!)
 
 ### Next Steps
 
-You might as well get a dockerhub account now
+You might as well get a **Docker Hub** account now
 (reserve your username on dockerhub): https://hub.docker.com/
-
+Docker Hub lets you store your docker files (public & private)
+so you can share these with people and deploy them anywhere.
 
 
 ## Open the Docker *Quickstart* Terminal App
+
+Open the Docker Quickstart Terminal App
+
+this will run a terminal script:
+![quickstart](https://cloud.githubusercontent.com/assets/194400/9295558/9b636dea-4469-11e5-9758-d7e8d16de06d.png)
 
 Run the suggested command:
 
 ```sh
 $ docker run hello-world
 ```
+
+![docker-configured](https://cloud.githubusercontent.com/assets/194400/9295567/f0e26b4a-4469-11e5-9c0e-1296c306c93c.png)
+
+
+Next try to run an ubuntu container (*only do this on a fast internet connection as its going to download 65mb ubuntu image*)
+
+```sh
+docker run -it ubuntu bash
+```
+![download ubuntu](https://cloud.githubusercontent.com/assets/194400/9295584/8137df40-446a-11e5-9b4c-b6af7b59c0b7.png)
+
 
 You will see the following message:
 ```sh
