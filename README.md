@@ -190,6 +190,14 @@ docker stop a205fc3a096f
 
 > https://docs.docker.com/reference/commandline/stop/
 
+## Help!
+
+For some reason I'm unable to access the **nginx** server runninginside the docker container ...
+looked at:
++ http://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container
++ http://stackoverflow.com/questions/31448249/how-to-deploy-web-service-on-docker-container
++ http://stackoverflow.com/questions/27714900/nginx-on-docker-daemonize-and-attach-to-bash
+
 
 ## Useful Links
 
