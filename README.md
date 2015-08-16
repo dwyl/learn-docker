@@ -80,20 +80,72 @@ command: `cat /etc/os-release`
 
 ![confirm-running-ubuntu](https://cloud.githubusercontent.com/assets/194400/9295641/202ed328-446c-11e5-8c19-15b8a2ae2b28.png)
 
+List the containers currently running:
+
+```sh
+docker-machine ls
+```
+Which shows:
+```sh
+NAME      ACTIVE   DRIVER       STATE     URL                         SWARM
+default            virtualbox   Running   tcp://192.168.99.100:2376
+```
+
+And for even more detail, run `docker info`
+
+```sh
+Containers: 2
+Images: 6
+Storage Driver: aufs
+ Root Dir: /mnt/sda1/var/lib/docker/aufs
+ Backing Filesystem: extfs
+ Dirs: 10
+ Dirperm1 Supported: true
+Execution Driver: native-0.2
+Logging Driver: json-file
+Kernel Version: 4.0.9-boot2docker
+Operating System: Boot2Docker 1.8.1 (TCL 6.3); master : 7f12e95 - Thu Aug 13 03:24:56 UTC 2015
+CPUs: 1
+Total Memory: 1.956 GiB
+Name: default
+ID: VIPW:LYBS:LT7I:KWTS:DU5U:W2NG:MWMH:EQNS:PFTF:4ZLN:STYL:4HG2
+Debug mode (server): true
+File Descriptors: 9
+Goroutines: 20
+System Time: 2015-08-16T22:27:21.593654583Z
+EventsListeners: 0
+Init SHA1:
+Init Path: /usr/local/bin/docker
+Docker Root Dir: /mnt/sda1/var/lib/docker
+Labels:
+ provider=virtualbox
+```
+
+
+
+
+
+
+Run the Dockerfile in this repo:
 
 ```sh
 docker build -t learn-docker .
 ```
 
-When you run:
-```
+View the current (*locally*) available docker images:
+```sh
 $ docker images
 ```
+
 You should see:
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
-learn-docker        latest              f8b203357215        3 minutes ago       215.3 MB
-ubuntu              14.04               c3d5614fecc4        38 hours ago        194.9 MB
+
+```sh
+REPOSITORY          TAG                 IMAGE ID            CREATED                  VIRTUAL SIZE
+learn-docker        latest              0c495aa0e6dc        Less than a second ago   261.6 MB
+ubuntu              14.04               8251da35e7a7        8 days ago               188.4 MB
+ubuntu              latest              8251da35e7a7        8 days ago               188.4 MB
+hello-world         latest              af340544ed62        9 days ago               960 B
+
 ```
 
 
