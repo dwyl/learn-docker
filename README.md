@@ -74,6 +74,12 @@ docker run -it ubuntu bash
 ```
 ![download ubuntu](https://cloud.githubusercontent.com/assets/194400/9295584/8137df40-446a-11e5-9b4c-b6af7b59c0b7.png)
 
+This will boot the Ubuntu image and log you into the container's bash.
+You can confirm that you are in a Linux bash by running the following
+command: `cat /etc/os-release`
+
+![confirm-running-ubuntu](https://cloud.githubusercontent.com/assets/194400/9295641/202ed328-446c-11e5-8c19-15b8a2ae2b28.png)
+
 
 ```sh
 docker build -t learn-docker .
