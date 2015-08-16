@@ -53,7 +53,9 @@ so you can share these with people and deploy them anywhere.
 
 Open the Docker Quickstart Terminal App
 
-this will run a terminal script:
+![use-spotlight-to-open-quickstart-app](https://cloud.githubusercontent.com/assets/194400/9295603/1f01466c-446b-11e5-97aa-71a051bc5301.png)
+
+This will open your terminal and run the boot script (*wait a couple of minutes for it to finish*...)
 ![quickstart](https://cloud.githubusercontent.com/assets/194400/9295558/9b636dea-4469-11e5-9758-d7e8d16de06d.png)
 
 Run the suggested command:
@@ -71,15 +73,6 @@ Next try to run an ubuntu container (*only do this on a fast internet connection
 docker run -it ubuntu bash
 ```
 ![download ubuntu](https://cloud.githubusercontent.com/assets/194400/9295584/8137df40-446a-11e5-9b4c-b6af7b59c0b7.png)
-
-
-You will see the following message:
-```sh
-Post http:///var/run/docker.sock/v1.20/containers/create: dial unix /var/run/docker.sock: no such file or directory.
-* Are you trying to connect to a TLS-enabled daemon without TLS?
-* Is your docker daemon up and running?
-```
-
 
 
 ```sh
