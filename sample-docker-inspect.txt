@@ -1,0 +1,137 @@
+[
+{
+    "Id": "a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e",
+    "Created": "2015-08-16T22:50:33.531227637Z",
+    "Path": "bash",
+    "Args": [],
+    "State": {
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 6935,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2015-08-16T22:50:33.649135951Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "Image": "0c495aa0e6dc6545c11bf17ed222fc27e11d659c8da596be0938bc422d578fd5",
+    "NetworkSettings": {
+        "Bridge": "",
+        "EndpointID": "7353b84c1563df10bcd5e4c0ad93bb727b67114eb2a40ffe64611085a4ac68f5",
+        "Gateway": "172.17.42.1",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "HairpinMode": false,
+        "IPAddress": "172.17.0.10",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "LinkLocalIPv6Address": "",
+        "LinkLocalIPv6PrefixLen": 0,
+        "MacAddress": "02:42:ac:11:00:0a",
+        "NetworkID": "a7ea7fe94059e576c5fe3283f411d509266eb4eb92477e47d593830bd7a80e61",
+        "PortMapping": null,
+        "Ports": {
+            "8888/tcp": null
+        },
+        "SandboxKey": "/var/run/docker/netns/a205fc3a096f",
+        "SecondaryIPAddresses": null,
+        "SecondaryIPv6Addresses": null
+    },
+    "ResolvConfPath": "/mnt/sda1/var/lib/docker/containers/a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e/resolv.conf",
+    "HostnamePath": "/mnt/sda1/var/lib/docker/containers/a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e/hostname",
+    "HostsPath": "/mnt/sda1/var/lib/docker/containers/a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e/hosts",
+    "LogPath": "/mnt/sda1/var/lib/docker/containers/a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e/a205fc3a096f6bd312ca46e2ce3e97b4bcf0018a6560b1ef86df2852e714648e-json.log",
+    "Name": "/insane_newton",
+    "RestartCount": 0,
+    "Driver": "aufs",
+    "ExecDriver": "native-0.2",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "",
+    "ExecIDs": null,
+    "HostConfig": {
+        "Binds": null,
+        "ContainerIDFile": "",
+        "LxcConf": [],
+        "Memory": 0,
+        "MemorySwap": 0,
+        "CpuShares": 0,
+        "CpuPeriod": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "CpuQuota": 0,
+        "BlkioWeight": 0,
+        "OomKillDisable": false,
+        "MemorySwappiness": -1,
+        "Privileged": false,
+        "PortBindings": {},
+        "Links": null,
+        "PublishAllPorts": false,
+        "Dns": null,
+        "DnsSearch": null,
+        "ExtraHosts": null,
+        "VolumesFrom": null,
+        "Devices": [],
+        "NetworkMode": "default",
+        "IpcMode": "",
+        "PidMode": "",
+        "UTSMode": "",
+        "CapAdd": null,
+        "CapDrop": null,
+        "GroupAdd": null,
+        "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+        },
+        "SecurityOpt": null,
+        "ReadonlyRootfs": false,
+        "Ulimits": null,
+        "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+        },
+        "CgroupParent": "",
+        "ConsoleSize": [
+            0,
+            0
+        ]
+    },
+    "GraphDriver": {
+        "Name": "aufs",
+        "Data": null
+    },
+    "Mounts": [],
+    "Config": {
+        "Hostname": "a205fc3a096f",
+        "Domainname": "",
+        "User": "",
+        "AttachStdin": true,
+        "AttachStdout": true,
+        "AttachStderr": true,
+        "ExposedPorts": {
+            "8888/tcp": {}
+        },
+        "PublishService": "",
+        "Tty": true,
+        "OpenStdin": true,
+        "StdinOnce": true,
+        "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Cmd": [
+            "bash"
+        ],
+        "Image": "learn-docker",
+        "Volumes": null,
+        "VolumeDriver": "",
+        "WorkingDir": "/apps/html",
+        "Entrypoint": null,
+        "NetworkDisabled": false,
+        "MacAddress": "",
+        "OnBuild": null,
+        "Labels": {}
+    }
+}
+]
