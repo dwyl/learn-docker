@@ -27,9 +27,11 @@ post: https://www.docker.com/whatisdocker
 If your laptop/pc is not running Linux you will need:
 Boot to Docker: https://github.com/boot2docker/boot2docker
 
-Download the Boot2Docker**.pkg** (Mac)
-or docker-install.**exe** (Windows)
-and install it on your Mac/PC.
+Download the Docker Toolkit**.pkg** (Mac)
+or docker-toolkit.**exe** (Windows)
+and *install* it on your Mac/PC.
+
+![docker-toolkit](https://pbs.twimg.com/media/CMj38QKWwAEZN3Y.png)
 
 ## Run Boot2Docker
 
