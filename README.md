@@ -123,10 +123,7 @@ Labels:
 
 
 
-
-
-
-Run the Dockerfile in this repo:
+### Run the `Dockerfile` in this repo
 
 ```sh
 docker build -t learn-docker .
@@ -145,7 +142,27 @@ learn-docker        latest              0c495aa0e6dc        Less than a second a
 ubuntu              14.04               8251da35e7a7        8 days ago               188.4 MB
 ubuntu              latest              8251da35e7a7        8 days ago               188.4 MB
 hello-world         latest              af340544ed62        9 days ago               960 B
+```
 
+### `docker ps`
+
+To list all the running docker containers, use:
+
+```sh
+docker ps -a
+```
+
+
+
+> https://docs.docker.com/reference/commandline/ps/
+
+### More info on a specific container
+
+To get more detail on a container type: `docker inspect {imageid}`
+
+e.g:
+```sh
+docker inspect {imageid}
 ```
 
 
