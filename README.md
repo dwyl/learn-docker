@@ -132,9 +132,15 @@ docker build -t learn-docker .
 ```
 Then run the image as a container:
 ```sh
-docker run -it learn-docker bash
+docker run -it -p 8888:8888 learn-docker bash
 ```
 > https://docs.docker.com/reference/run/
+
+Exec
+
+```sh
+docker exec -it learn-docker bash
+```
 
 
 ### List (*Locally Available*) Images
@@ -192,12 +198,26 @@ docker stop a205fc3a096f
 
 ## Help!
 
-For some reason I'm unable to access the **nginx** server runninginside the docker container ...
+For some reason I'm unable to access the **nginx** server running inside the docker container ...
 looked at:
 + http://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container
 + http://stackoverflow.com/questions/31448249/how-to-deploy-web-service-on-docker-container
 + http://stackoverflow.com/questions/27714900/nginx-on-docker-daemonize-and-attach-to-bash
 
+### is nginx working?
+
++ http://askubuntu.com/questions/443775/nginx-failing-to-reload-how-to-track-down-why
+
+Test that your nginx configuration is valid (doen't have errors)
+```sh
+sudo nginx -t
+```
+
+expect the following output:
+```sh
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
 
 ## Useful Links
 
