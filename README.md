@@ -219,6 +219,74 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
+## Docker and ["PETE" stack](https://github.com/dwyl/technology-stack#the-pete-stack)
+
+You can create or run a Phoenix application by using the following Dockerfile:
+
+```
+FROM elixir:1.7.3
+
+RUN mix local.hex --force \
+  && mix archive.install hex phx_new 1.4.0 --force \
+  && apt-get update \
+  && curl -sL https://deb.nodesource.com/setup_8.x | bash \
+  && apt-get install -y apt-utils \
+  && apt-get install -y nodejs \
+  && apt-get install -y build-essential \
+  && apt-get install -y inotify-tools \
+  && mix local.rebar --force \
+  && wget "https://github.com/elm/compiler/releases/download/0.19.0/binaries-for-linux.tar.gz" \
+  && tar xzf binaries-for-linux.tar.gz \
+  && mv elm /usr/local/bin/
+
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+
+
+CMD ["mix", "phx.server"]
+```
+This will create a container with Elixir, Node.js, Elm.
+
+You can then use the following `docker-compose.yml` file to use Postgres with your application:
+
+```
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    env_file:
+      - ./.env
+  db:
+    image: postgres:10.5
+    ports:
+        - "5432:5432"
+```
+
+You can then create a new Phoenix application with:
+`docker-compose run --rm app mix phx.new . --app name_of_the_app`
+
+Make sure to update the database configuration in the Phoenix application to reference the Postgres service name (ie db), for example:
+
+```elixir
+# Configure your database
+config :app_name, AppName.Repo,
+  username: "postgres",
+  password: "postgres",
+  database: "app_name_dev",
+  hostname: "db",
+  pool_size: 10
+```
+
+Use `docker-compose` if you want to run some commands, for example to create the database:
+
+`docker-compose run web mix ecto.create`
+
 ## Useful Links
 
 ### Cheat Sheet
