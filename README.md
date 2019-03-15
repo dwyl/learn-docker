@@ -4,18 +4,17 @@ Docker: Believe the Hype!
 ![Docker Logo](http://i.imgur.com/KgdWLdh.png)
 
 
-
 Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
 
 
 ## What? (*Quick* Introduction)
 
-- Read the *official* "What is Docker?"
-post: https://www.docker.com/whatisdocker
-- Watch the intro vide: https://www.youtube.com/watch?v=ZzQfxoMFH0U
-
-
+- Read the *official* "Docker overview" (10 minute read):
+https://docs.docker.com/engine/docker-overview/
+- Watch this 12 minute video on what Docker is and a simple example of how to
+use it: https://youtu.be/YFl2mCHdv24. Follow along with the example if you want
+to test it out for yourself!
 
 ## Installation
 
