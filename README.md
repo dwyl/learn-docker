@@ -16,9 +16,6 @@ post: https://www.docker.com/whatisdocker
 - Watch the intro vide: https://www.youtube.com/watch?v=ZzQfxoMFH0U
 
 
-## Try
-
-- Try the online demo: https://www.docker.com/tryit/
 
 ## Installation
 
