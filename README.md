@@ -285,6 +285,10 @@ Use `docker-compose` if you want to run some commands, for example to create the
 
 ## Useful Links
 
+### About Docker
+- Light-hearted Slideshow (with adequate detail to read through it) about what
+Docker is and how it is useful: https://www.slideshare.net/jpetazzo/docker-automation-for-the-rest-of-us
+
 ### Cheat Sheet
 
 - Command Line Reference: http://docs.docker.com/reference/commandline/cli
