@@ -24,11 +24,11 @@ Using Docker has advantages similar to those of running a virtual machine but co
 - Your defined environment (dependency versions and environment variables) can then be run by whomever is working on / viewing the application. This means that everyone can have the same experience.
 - To create this isolated environment for your application your put it into a ‘container’ (a standardised unit of software):
 
-**Container**
+[**Container**](https://www.docker.com/resources/what-container)
 > A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 
 **Container image**
-> A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers - images become containers when they run on Docker Engine. 
+> A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers - images become containers when they run on [Docker Engine](https://www.docker.com/products/docker-engine). 
 
 - Read the *official* "Docker overview" (10 minute read):
 https://docs.docker.com/engine/docker-overview/
