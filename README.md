@@ -12,8 +12,8 @@ Have you ever struggled to get your developer environment set up as a new user o
 an existing project? Or have you ever had difficulty reproducing a bug or error
 that another team member is experiencing? Or that only exists in your production
 environment but not in your development environment. If you have, then you have
-encountered some of the difficulties of not working in the same environment as
-your teammates on a project. Docker is the solution to these problems as well as
+encountered some of the difficulties that can arise when code is run in different
+environments. Docker is the solution to these problems as well as
 offering a host of other benefits.
 
 Docker containers offer the isolated environment advantages of running a virtual
