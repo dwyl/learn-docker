@@ -8,12 +8,18 @@ Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
 
 ## Why?
-Have you ever struggled to get your developer environment set up as a new user on an existing project? Or have you ever had difficulty reproducing a bug or error that another team member is experiencing? If you have, then you have encountered some of the difficulties of not working in the same environment as your teammates on a project. Docker is the solution to these problems as well as offering a host of other benefits.
-
 Using Docker has advantages similar to those of running a virtual machine but containers are more lightweight and have less overhead/hassle.
+Have you ever struggled to get your developer environment set up as a new user on
+an existing project? Or have you ever had difficulty reproducing a bug or error
+that another team member is experiencing? Or that only exists in your production
+environment but not in your development environment. If you have, then you have
+encountered some of the difficulties of not working in the same environment as
+your teammates on a project. Docker is the solution to these problems as well as
+offering a host of other benefits.
+
 - reduce the delay between writing code and running it in production
 - automation of the environment set up saves time setting up new users and time trying to reproduce bugs/errors
-- easily sandbox different environments
+- easily create [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
 - reduces ‘dependency hell’
 - easy to perform deployment rollbacks
 - Good for legacy, native, Linux and Windows based apps
