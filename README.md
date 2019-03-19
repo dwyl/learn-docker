@@ -59,63 +59,62 @@ to test it out for yourself!
 
 ### Installation
 
-If your laptop/pc is not running Linux you will need to
-Download the Docker Toolkit**.pkg** (Mac)
-or docker-toolkit.**exe** (Windows)
-and *install* it on your Mac/PC.
-
-+ Mac: http://docs.docker.com/installation/mac/
-+ Windows: http://docs.docker.com/installation/windows/
++ Mac: https://docs.docker.com/docker-for-mac/install/
++ Windows: https://docs.docker.com/docker-for-windows/install/
 + Linux: you already have LXC but can install a native docker package
 by clicking "Linux" and selecting your distro from the list or installing
-a binary: http://docs.docker.com/installation/binaries/
+a binary: https://docs.docker.com/install/linux/docker-ce/binaries/
 
-![docker-toolbox-453-mb](https://cloud.githubusercontent.com/assets/194400/9295494/94ddc882-4467-11e5-9212-d9a506081764.png)
+Mac example walk through:
 
-Sadly, Docker Toolkit is the "*official*" way of running docker on Mac
-so we have to swallow the **453Mb** pill  
-and get on with it! (*click install*!)
+1. Create a Docker Hub account: https://hub.docker.com/ You need an account to
+be able to download Docker Desktop. Docker Hub lets you store your docker files
+(public & private) so you can share these with people and deploy them anywhere.
 
-![docker-toolkit-installation-summary](https://cloud.githubusercontent.com/assets/194400/9295486/5094de68-4467-11e5-9bab-e3a3957388b8.png)
+2. Download Docker Desktop for Mac: https://hub.docker.com/editions/community/docker-ce-desktop-mac
+The file is **546.8MB** and you need Mac OS Sierra or later, and to have at
+least 4GB of RAM.
 
-### Next Steps
+3. Install Docker Desktop on your Mac.
+Open the `docker.dmg` file you downloaded, and drag the Docker app's whale icon
+into your Applications folder.
 
-You might as well get a **Docker Hub** account now
-(reserve your username on dockerhub): https://hub.docker.com/
-Docker Hub lets you store your docker files (public & private)
-so you can share these with people and deploy them anywhere.
+![drag-docker-to-applications](https://user-images.githubusercontent.com/16775804/54625627-8bdb4200-4a67-11e9-9b9d-891d20ea359c.png)
 
-
-## Open the Docker *Quickstart* Terminal App
-
-Open the Docker Quickstart Terminal App
-
-![use-spotlight-to-open-quickstart-app](https://cloud.githubusercontent.com/assets/194400/9295603/1f01466c-446b-11e5-97aa-71a051bc5301.png)
-
-This will open your terminal and run the boot script (*wait a couple of minutes for it to finish*...)
-![quickstart](https://cloud.githubusercontent.com/assets/194400/9295558/9b636dea-4469-11e5-9758-d7e8d16de06d.png)
-
-Run the suggested command:
-
-```sh
-$ docker run hello-world
-```
-
-![docker-configured](https://cloud.githubusercontent.com/assets/194400/9295567/f0e26b4a-4469-11e5-9c0e-1296c306c93c.png)
+4. Open and run Docker
+When you run the Docker app, a little whale icon will appear on the right-hand
+side of the menu bar at the top of your screen. It might take a few minutes to
+get running, and Docker may ask your permission to use services on your computer.
+The app will also prompt you to enter your Docker Hub account details.
 
 
-Next try to run an ubuntu container (*only do this on a fast internet connection as its going to download 65mb ubuntu image*)
+## Once installed
+
+Once you've installed Docker, opened it and signed in to your account you can
+now open a command-line terminal, and try out some Docker commands.
+
+- Try `docker version` to check that you have the latest release installed.
+
+- Or run `docker run hello-world` to verify that Docker is pulling images and running as expected.
+
+You should see something like this in your terminal:
+
+![docker-configured](https://user-images.githubusercontent.com/16775804/54629658-f2645e00-4a6f-11e9-8ce0-139243a022d6.png)
+
+As it suggests, next try to run an ubuntu container (*only do this on a fast
+  internet connection as its going to download 65mb ubuntu image*)
 
 ```sh
 docker run -it ubuntu bash
 ```
-![download ubuntu](https://cloud.githubusercontent.com/assets/194400/9295584/8137df40-446a-11e5-9b4c-b6af7b59c0b7.png)
+![download ubuntu](https://user-images.githubusercontent.com/16775804/54629793-39eaea00-4a70-11e9-91c3-328132251a00.png)
 
 This will boot the Ubuntu image and log you into the container's bash.
 You can confirm that you are in a Linux bash by running the following
 command: `cat /etc/os-release`
 
-![confirm-running-ubuntu](https://cloud.githubusercontent.com/assets/194400/9295641/202ed328-446c-11e5-8c19-15b8a2ae2b28.png)
+![confirm-running-ubuntu](https://user-images.githubusercontent.com/16775804/54629885-69015b80-4a70-11e9-976d-c25b34373a6a.png)
+
 
 List the containers currently running:
 
