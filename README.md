@@ -19,7 +19,8 @@ offering a host of other benefits.
 Docker containers offer the isolated environment advantages of running a virtual
 machine, but are more lightweight, portable, scalable and have less overhead/hassle.
 - reduce the delay between writing code and running it in production
-- automation of the environment set up saves time setting up new users and time trying to reproduce bugs/errors
+- automation of the environment set up saves time setting up new users and time
+trying to reproduce bugs/errors
 - easily create [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
 - reduces ‘dependency hell’
 - easy to perform deployment rollbacks
@@ -37,10 +38,16 @@ everyone can have the same experience.
 ‘container’ (a standardised unit of software):
 
 [**Container**](https://www.docker.com/resources/what-container)
-> A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+> A container is a standard unit of software that packages up code and all its
+dependencies so the application runs quickly and reliably from one computing
+environment to another.
 
 **Container image**
-> A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers - images become containers when they run on [Docker Engine](https://www.docker.com/products/docker-engine). 
+> A Docker container image is a lightweight, standalone, executable package of
+software that includes everything needed to run an application: code, runtime,
+system tools, system libraries and settings. Container images become containers
+at runtime and in the case of Docker containers - images become containers when
+they run on [Docker Engine](https://www.docker.com/products/docker-engine). 
 
 - Read the *official* "Docker overview" (10 minute read):
 https://docs.docker.com/engine/docker-overview/
