@@ -8,7 +8,6 @@ Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
 
 ## Why?
-Using Docker has advantages similar to those of running a virtual machine but containers are more lightweight and have less overhead/hassle.
 Have you ever struggled to get your developer environment set up as a new user on
 an existing project? Or have you ever had difficulty reproducing a bug or error
 that another team member is experiencing? Or that only exists in your production
@@ -17,6 +16,8 @@ encountered some of the difficulties of not working in the same environment as
 your teammates on a project. Docker is the solution to these problems as well as
 offering a host of other benefits.
 
+Docker containers offer the isolated environment advantages of running a virtual
+machine, but are more lightweight, portable, scalable and have less overhead/hassle.
 - reduce the delay between writing code and running it in production
 - automation of the environment set up saves time setting up new users and time trying to reproduce bugs/errors
 - easily create [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
@@ -25,10 +26,15 @@ offering a host of other benefits.
 - Good for legacy, native, Linux and Windows based apps
 
 ## What?
-- Docker’s official definition is that it’s ‘an open platform for developing, shipping, and running applications’.
-- It provides you with the ability to package and run an application in a loosely isolated environment called a container.
-- Your defined environment (dependency versions and environment variables) can then be run by whomever is working on / viewing the application. This means that everyone can have the same experience.
-- To create this isolated environment for your application your put it into a ‘container’ (a standardised unit of software):
+- Docker’s official definition is that it’s ‘an open platform for developing,
+shipping, and running applications’.
+- It provides you with the ability to package and run an application in a loosely
+isolated environment called a container.
+- Your defined environment (dependency versions and environment variables) can
+then be run by whomever is working on / viewing the application. This means that
+everyone can have the same experience.
+- To create this isolated environment for your application put it into a
+‘container’ (a standardised unit of software):
 
 [**Container**](https://www.docker.com/resources/what-container)
 > A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
