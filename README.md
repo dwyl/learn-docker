@@ -115,17 +115,17 @@ command: `cat /etc/os-release`
 
 ![confirm-running-ubuntu](https://user-images.githubusercontent.com/16775804/54629885-69015b80-4a70-11e9-976d-c25b34373a6a.png)
 
-
-List the containers currently running:
+List the containers:
 
 ```sh
-docker-machine ls
+docker container ls
 ```
 Which shows:
-```sh
-NAME      ACTIVE   DRIVER       STATE     URL                         SWARM
-default            virtualbox   Running   tcp://192.168.99.100:2376
-```
+
+![docker-container-ls](https://user-images.githubusercontent.com/16775804/54669601-b241c180-4ae9-11e9-9bf5-e246b1cfa6aa.png)
+
+See: https://docs.docker.com/engine/reference/commandline/container_ls/ for ways
+to make this command more specific.
 
 And for even more detail, run `docker info`
 
@@ -170,14 +170,14 @@ Then run the image as a container:
 ```sh
 docker run -it -p 8888:8888 learn-docker bash
 ```
-> https://docs.docker.com/reference/run/
+> https://docs.docker.com/v17.09/engine/reference/commandline/run/
 
-Exec
+Exec (for running a command in a running container)
 
 ```sh
 docker exec -it learn-docker bash
 ```
-
+> https://docs.docker.com/v17.09/engine/reference/commandline/exec/
 
 ### List (*Locally Available*) Images
 
@@ -204,7 +204,7 @@ To list all the running docker containers, use:
 docker ps -a
 ```
 
-> https://docs.docker.com/reference/commandline/ps/
+> https://docs.docker.com/v17.09/engine/reference/commandline/ps/
 
 ### More info on a specific container
 
@@ -230,7 +230,7 @@ where the last argument is the container (image) id.
 docker stop a205fc3a096f
 ```
 
-> https://docs.docker.com/reference/commandline/stop/
+> https://docs.docker.com/v17.09/engine/reference/commandline/stop/
 
 ## Help!
 
@@ -244,7 +244,7 @@ looked at:
 
 + http://askubuntu.com/questions/443775/nginx-failing-to-reload-how-to-track-down-why
 
-Test that your nginx configuration is valid (doen't have errors)
+Test that your nginx configuration is valid (doesn't have errors)
 ```sh
 sudo nginx -t
 ```
@@ -319,7 +319,7 @@ config :app_name, AppName.Repo,
   pool_size: 10
 ```
 
-Use `docker-compose` if you want to run some commands, for example to create the database:
+Use `docker-compose` if you want to run commands, for example to create the database:
 
 `docker-compose run web mix ecto.create`
 
@@ -343,6 +343,6 @@ https://www.youtube.com/watch?v=Q5POuMHxW-0 47mins - 2mins of *content*!
 https://www.youtube.com/watch?v=XCVOxht34Hs 25mins - relevant to developers
 
 ### Tutorials
-
+- https://www.imore.com/how-run-docker-your-mac
 - http://blog.xebia.com/2014/06/18/deploying-a-node-js-app-to-docker-on-coreos-using-deis/
 - https://medium.com/@dscape/getting-started-with-docker-for-the-node-js-couchdb-programmer-35c45ce2a814
