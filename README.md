@@ -7,8 +7,47 @@ Docker: Believe the Hype!
 Learn how to use docker.io containers to consistently deploy
 your apps on any infrastructure.
 
+## Why?
+Have you ever struggled to get your developer environment set up as a new user on
+an existing project? Or have you ever had difficulty reproducing a bug or error
+that another team member is experiencing? Or that only exists in your production
+environment but not in your development environment? If you have, then you have
+encountered some of the difficulties that can arise when code is run in different
+environments. Docker is the solution to these problems as well as
+offering a host of other benefits.
 
-## What? (*Quick* Introduction)
+Docker containers offer the isolated environment advantages of running a virtual
+machine, but are more lightweight, portable, scalable and have less overhead/hassle.
+- reduce the delay between writing code and running it in production
+- automation of the environment set up saves time setting up new users and time
+trying to reproduce bugs/errors
+- easily create [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
+- reduces ‘dependency hell’
+- easy to perform deployment rollbacks
+- Good for legacy, native, Linux and Windows based apps
+
+## What?
+- Docker’s official definition is that it’s ‘an open platform for developing,
+shipping, and running applications’.
+- It provides you with the ability to package and run an application in a loosely
+isolated environment called a container.
+- Your defined environment (dependency versions and environment variables) can
+then be run by whomever is working on / viewing the application. This means that
+everyone can have the same experience.
+- To create this isolated environment for your application put it into a
+‘container’ (a standardised unit of software):
+
+[**Container**](https://www.docker.com/resources/what-container)
+> A container is a standard unit of software that packages up code and all its
+dependencies so the application runs quickly and reliably from one computing
+environment to another.
+
+**Container image**
+> A Docker container image is a lightweight, standalone, executable package of
+software that includes everything needed to run an application: code, runtime,
+system tools, system libraries and settings. Container images become containers
+at runtime and in the case of Docker containers - images become containers when
+they run on [Docker Engine](https://www.docker.com/products/docker-engine). 
 
 - Read the *official* "Docker overview" (10 minute read):
 https://docs.docker.com/engine/docker-overview/
@@ -16,7 +55,9 @@ https://docs.docker.com/engine/docker-overview/
 use it: https://youtu.be/YFl2mCHdv24. Follow along with the example if you want
 to test it out for yourself!
 
-## Installation
+## How?
+
+### Installation
 
 If your laptop/pc is not running Linux you will need to
 Download the Docker Toolkit**.pkg** (Mac)
