@@ -323,6 +323,32 @@ Use `docker-compose` if you want to run commands, for example to create the data
 
 `docker-compose run web mix ecto.create`
 
+## Docker Swarm vs. Kubernetes
+This repo has walked through the basic set up of Docker containers. To deal with
+managing multiple containers there are container management facilities or container
+orchestration platforms. These facilities are useful for:
+
+- Running containers across many different machines
+- Scaling up or down by adding or removing containers when demand changes
+- Keeping storage consistent with multiple instances of an application
+- Distributing load between the containers
+- Launching new containers on different machines if something fails
+
+Docker offers its own such facility called [Docker Swarm](https://docs.docker.com/engine/swarm/).
+Another popular open source platform is [Kubernetes](http://kubernetes.io/).
+Kubernetes must be used in conjunction with Docker containers, it is not a
+complete alternative.
+
+Docker Swarm and Kubernetes both have their pros and cons. Deciding which one to
+use comes down to what is best for your project. But as a very brief summary,
+Docker Swarm is considered easier to adopt with better usability than Kubernetes.
+Whilst slower to initially learn, Kubernetes receives praise for its ability to
+scale at speed for larger projects and its flexibility.
+
+To find out more see:
+- https://blog.containership.io/k8svsdocker
+- https://technologyadvice.com/blog/information-technology/kubernetes-vs-docker/
+
 ## Useful Links
 
 ### About Docker
