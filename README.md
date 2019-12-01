@@ -357,12 +357,11 @@ Docker is and how it is useful: https://www.slideshare.net/jpetazzo/docker-autom
 
 ### Cheat Sheet
 
-- Command Line Reference: http://docs.docker.com/reference/commandline/cli
+- Command Line Reference: https://docs.docker.com/engine/reference/commandline/cli/
 - Cheat Sheet: https://github.com/wsargent/docker-cheat-sheet
 
 ### Videos
 
-- Build Podcast Docker: http://build-podcast.com/docker/
 - Introduction to Docker - (Twitter University):
 https://www.youtube.com/watch?v=Q5POuMHxW-0 47mins - 2mins of *content*!
 - Be a happier developer with Docker:
@@ -371,4 +370,3 @@ https://www.youtube.com/watch?v=XCVOxht34Hs 25mins - relevant to developers
 ### Tutorials
 - https://www.imore.com/how-run-docker-your-mac
 - http://blog.xebia.com/2014/06/18/deploying-a-node-js-app-to-docker-on-coreos-using-deis/
-- https://medium.com/@dscape/getting-started-with-docker-for-the-node-js-couchdb-programmer-35c45ce2a814
