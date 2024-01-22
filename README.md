@@ -359,6 +359,7 @@ Docker is and how it is useful: https://www.slideshare.net/jpetazzo/docker-autom
 
 - Command Line Reference: https://docs.docker.com/engine/reference/commandline/cli/
 - Cheat Sheet: https://github.com/wsargent/docker-cheat-sheet
+- Cheat Sheet: https://spacelift.io/blog/docker-commands-cheat-sheet
 
 ### Videos
 
